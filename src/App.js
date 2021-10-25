@@ -1,7 +1,11 @@
-import Card from './Card';
+// import Card from './Card';
 import "./CssFiles/Card.css"
 import {useState} from "react"
 import {FiHeart} from "react-icons/fi"
+import Filter from "./Filter";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+// import About from './CssFiles/component/About.js';
 
 function App() {
  const [Data,setData] = useState([
@@ -116,27 +120,18 @@ function App() {
 
   ])
 
-  
-
-
-// const Card = {
-//    border:"2px solid gray",
-   
-// }
 
 
   return (
     <div className="App">
       <header className="App-header">
     
-
-
-        <h1 style={{textAlign:"center"}}>OLX CArd</h1>
-            
+        <h1 style={{textAlign:"center"}}>OLX CArd</h1>      
         <div id="Card">
-            {
+            {/* {
               Data.map((val,ind) => {
                 return <Card
+                           key={ind}
                            mark={val.mark}
                            icon={val.icon}
                            img={val.img}
@@ -148,12 +143,23 @@ function App() {
                 
                 />
               })
-            }
+            } */}
 
         </div>
-        
 
       </header>
+
+      <Filter 
+           
+          //  key={ind}
+          //  mark={val.mark}
+          //  icon={val.icon}
+          //  img={val.img}
+          //  price={val.price}
+          //  text={val.text}
+          //  location={val.location}
+          //  time={val.time}
+      />
     </div>
   );
 }

@@ -11,6 +11,8 @@ const Card = (props) => {
     // const {data,icon} = props
 
     return (
+        <>
+        {props.vehicles}
         <div className="innerCArd">
             <div className="first_in">
                 <mark>{props.mark}</mark>
@@ -34,7 +36,9 @@ const Card = (props) => {
             </div>
             
         </div>
+        </>
     )
+
 }
 
 export default Card
