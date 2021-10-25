@@ -190,7 +190,10 @@ const Filter = () => {
              
             <div id="Card">
                 
-            {heading === "" ?  fdata.map((val,ind) => {
+                {/* Condition filtering new selectDAta  */}
+
+            {heading === "" ? 
+             fdata.map((val,ind) => {
                     return <Card
                     key={ind}
                     mark={val.mark}
@@ -199,15 +202,17 @@ const Filter = () => {
                     price={val.price}
                     text={val.text}
                     location={val.location}
-                    time={val.time}
-                
-
-         
-         />
+                    time={val.time}  />
          
                 })
-             : 
-                     filterVal.length == 0 ?         newDAta.map((val,ind) => {
+
+                : 
+                 
+                // Second condition filter data by search input
+
+                     filterVal.length == 0 ?  
+                     
+                     newDAta.map((val,ind) => {
                         return <Card
                         key={ind}
                         mark={val.mark}
