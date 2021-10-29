@@ -3,6 +3,8 @@ import "./CssFiles/Card.css"
 import {useState} from "react"
 import {FiHeart} from "react-icons/fi"
 import Filter from "./Filter";
+import MaterialUi from "./MaterialUi";
+import QuizApp from "./QuizApp";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import About from './CssFiles/component/About.js';
@@ -126,7 +128,7 @@ function App() {
     <div className="App">
       <header className="App-header">
     
-        <h1 style={{textAlign:"center"}}>OLX CArd</h1>      
+        {/* <h1 style={{textAlign:"center"}}>OLX CArd</h1>       */}
         <div id="Card">
             {/* {
               Data.map((val,ind) => {
@@ -149,7 +151,7 @@ function App() {
 
       </header>
 
-      <Filter 
+      {/* <Filter 
            
           //  key={ind}
           //  mark={val.mark}
@@ -159,7 +161,12 @@ function App() {
           //  text={val.text}
           //  location={val.location}
           //  time={val.time}
-      />
+
+      /> */}
+
+      
+      {/* <MaterialUi /> */}
+      <QuizApp />
     </div>
   );
 }

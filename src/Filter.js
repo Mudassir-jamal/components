@@ -111,7 +111,7 @@ const Filter = () => {
 
               
               
-
+// SELECT fUNCTION
 
     const FilterData = (e) => {
         const a = e.target.value
@@ -126,15 +126,12 @@ const Filter = () => {
            const getNew = fdata.filter(newVAL => {
             return newVAL.category === a})
 
-              setNewData(getNew)
-
-              
-         }  
-
+             setNewData(getNew)
+             }  
             
     }
 
-
+    //INPUT FUNCTION
 
 
     const InputValue = (e) => {
@@ -146,10 +143,6 @@ const Filter = () => {
             return value.text.toLowerCase().includes(inVal.toLowerCase())
         })
 
-           console.log(getNew)
-
-          
-
            if(inVal == ""){
             setFilterVal([])
            }else{
@@ -159,12 +152,8 @@ const Filter = () => {
 
     }
 
-    console.log(filterVal)
-
 // console.log(filterVal)
 
-
-  
 
     return (
         <div>
